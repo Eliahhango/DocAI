@@ -1,0 +1,10 @@
+node_modules
+.next
+.env
+.env.local
+.env*.local
+.git
+uploads
+mobile-app
+*.log
+.DS_Store
