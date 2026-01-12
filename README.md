@@ -1,188 +1,152 @@
-# DocAI - AI-Powered Document Solution
+# DocAI
 
-A modern, scalable AI-powered document solution website that helps users easily create, edit, convert, and manage professional documents.
+<div align="center">
 
-## 🎯 Features
+**AI-Powered Document Solution**
 
-### Core AI Features
-- **AI Word Document Generator** - Generate reports, proposals, letters, resumes, assignments
-- **AI PowerPoint Generator** - Create presentations from topics, outlines, or documents
-- **AI PDF Generator** - Generate PDFs from text, Word, or PPT
-- **AI Document Rewriter & Enhancer** - Improve and rewrite documents with AI
-- **AI Grammar & Formatting Assistant** - Get real-time grammar checks
-- **AI Summarizer** - Summarize long documents into short notes or slides
-- **AI Translator** - Multi-language document support
+*A modern, scalable platform for creating, editing, converting, and managing professional documents*
 
-### Document Tools
-- Create & edit Word (.docx), PowerPoint (.pptx), and PDF (.pdf) documents
-- Convert between formats (Word ↔ PDF, PPT ↔ PDF, etc.)
-- Upload & edit existing documents
-- Export with professional templates
-- Document library with version history
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-5.7-2D3748?style=for-the-badge&logo=prisma)](https://www.prisma.io/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-### UI/UX
-- Clean, modern, minimal UI
-- Dashboard-based layout
-- Drag-and-drop document upload (ready for implementation)
-- Real-time preview for documents
-- Dark & Light mode
-- Mobile-responsive design
+</div>
 
-### User System
-- User authentication (email, Google OAuth)
-- Personal document library
-- Auto-save & version history
-- Cloud storage per user
+---
 
-### Monetization
-- Free plan with limits
-- Premium subscription system (framework ready)
-- Unlimited document generation (Premium)
-- Advanced templates (Premium)
-- Faster AI processing (Premium)
+## Core Purpose
 
-## 🚀 Tech Stack
+The platform acts as an all-in-one document assistant for students, professionals, and businesses—eliminating the need for advanced technical or formatting knowledge.
 
-- **Frontend**: Next.js 14 (App Router), React, TypeScript, Tailwind CSS
-- **Backend**: Next.js API Routes, Prisma ORM
-- **AI**: OpenAI GPT-4 Turbo
-- **File Handling**: docx, pdfkit, pptxgenjs, mammoth, pdf-parse
-- **Database**: PostgreSQL (via Prisma)
-- **Authentication**: NextAuth.js (Email + Google OAuth)
-- **Hosting**: Ready for Vercel/AWS
+## AI Features
 
-## 📦 Installation
+### Document Generation
+- **AI Word Document Generator** - Generate reports, proposals, letters, resumes, and assignments instantly
+- **AI PowerPoint Creator** - Create stunning presentations from topics, outlines, or documents
+- **AI PDF Generator** - Generate professional PDFs from text, Word, or PowerPoint files
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd docai
-   ```
+### Document Enhancement
+- **AI Document Rewriter & Enhancer** - Improve and rewrite documents with AI-powered suggestions
+- **AI Grammar & Formatting Assistant** - Get real-time grammar checks and professional formatting
+- **AI Summarizer** - Summarize long documents into concise notes or slides
+- **AI Translator** - Multi-language document support with professional translations
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+## Document Tools
 
-3. **Set up environment variables**
-   Create a `.env` file in the root directory:
-   ```env
-   # Database
-   DATABASE_URL="postgresql://user:password@localhost:5432/docai?schema=public"
+### Create & Edit
+- **Word Documents** (.docx) - Full-featured Word document creation and editing
+- **PowerPoint Presentations** (.pptx) - Professional slide deck generation
+- **PDF Documents** (.pdf) - High-quality PDF creation and editing
 
-   # NextAuth
-   NEXTAUTH_URL="http://localhost:3000"
-   NEXTAUTH_SECRET="your-secret-key-here"
+### Convert & Transform
+- **Format Conversion** - Word ↔ PDF, PPT ↔ PDF, Text ↔ Word/PPT/PDF
+- **Upload & Process** - Upload existing documents and convert them
+- **Export Options** - Export with professional templates and formatting
 
-   # OAuth (Google)
-   GOOGLE_CLIENT_ID="your-google-client-id"
-   GOOGLE_CLIENT_SECRET="your-google-client-secret"
+## User Interface
 
-   # OpenAI
-   OPENAI_API_KEY="your-openai-api-key"
+- **Modern Design** - Clean, minimal UI with intuitive navigation
+- **Dashboard Layout** - Centralized document management
+- **Dark & Light Mode** - Toggle between themes for comfortable viewing
+- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
+- **Real-time Preview** - See changes as you work
+- **Drag-and-Drop Upload** - Easy file upload experience
 
-   # File Storage
-   UPLOAD_DIR="./uploads"
-   MAX_FILE_SIZE=10485760
-   ```
+## User System
 
-   Generate a NextAuth secret:
-   ```bash
-   openssl rand -base64 32
-   ```
+- **Authentication** - Secure email/password and Google OAuth integration
+- **Personal Library** - Cloud storage for all your documents
+- **Auto-save** - Never lose your work with automatic saving
+- **Version History** - Track changes and restore previous versions
+- **User Profiles** - Manage your account and preferences
 
-4. **Set up the database**
-   ```bash
-   # Generate Prisma Client
-   npm run db:generate
+## Monetization
 
-   # Push schema to database
-   npm run db:push
+### Free Plan
+- Basic document generation
+- Limited AI features
+- Standard templates
+- Community support
 
-   # (Optional) Open Prisma Studio
-   npm run db:studio
-   ```
+### Premium Subscription
+- **Unlimited** document generation
+- **Advanced** templates library
+- **Faster** AI processing
+- **Priority** support
+- **Early access** to new features
 
-5. **Run the development server**
-   ```bash
-   npm run dev
-   ```
+## Tech Stack
 
-   Open [http://localhost:3000](http://localhost:3000) in your browser.
+<table>
+<tr>
+<td><strong>Frontend</strong></td>
+<td>Next.js 14, React, TypeScript, Tailwind CSS</td>
+</tr>
+<tr>
+<td><strong>Backend</strong></td>
+<td>Next.js API Routes, Prisma ORM</td>
+</tr>
+<tr>
+<td><strong>AI</strong></td>
+<td>OpenAI GPT-4 Turbo</td>
+</tr>
+<tr>
+<td><strong>Database</strong></td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td><strong>Authentication</strong></td>
+<td>NextAuth.js (Email + Google OAuth)</td>
+</tr>
+<tr>
+<td><strong>Payments</strong></td>
+<td>Stripe</td>
+</tr>
+<tr>
+<td><strong>File Processing</strong></td>
+<td>docx, pdfkit, pptxgenjs, mammoth, pdf-parse</td>
+</tr>
+</table>
 
-## 🔧 Configuration
+## Quick Start
 
-### Google OAuth Setup
-1. Go to [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project or select an existing one
-3. Enable Google+ API
-4. Create OAuth 2.0 credentials
-5. Add authorized redirect URI: `http://localhost:3000/api/auth/callback/google`
-6. Copy Client ID and Client Secret to `.env`
+### Prerequisites
 
-### OpenAI Setup
-1. Go to [OpenAI Platform](https://platform.openai.com/)
-2. Create an API key
-3. Add the key to `.env` as `OPENAI_API_KEY`
+- Node.js 18+ and npm/yarn
+- PostgreSQL database
+- OpenAI API key
 
-## 📁 Project Structure
+### Installation
 
-```
-docai/
-├── app/                      # Next.js App Router
-│   ├── api/                  # API routes
-│   │   ├── auth/            # Authentication routes
-│   │   └── documents/       # Document API routes
-│   ├── dashboard/           # Dashboard pages
-│   │   ├── documents/       # Document management
-│   │   ├── generate/        # AI generation pages
-│   │   └── settings/        # User settings
-│   ├── login/               # Login page
-│   ├── signup/              # Signup page
-│   └── layout.tsx           # Root layout
-├── components/              # React components
-│   ├── layout/             # Layout components
-│   ├── providers/          # Context providers
-│   └── ui/                 # UI components
-├── lib/                     # Utility libraries
-│   ├── ai.ts               # OpenAI integration
-│   ├── documents.ts        # Document processing
-│   ├── auth.ts             # Authentication helpers
-│   └── prisma.ts           # Prisma client
-├── prisma/                  # Database schema
-│   └── schema.prisma       # Prisma schema
-└── types/                   # TypeScript types
+```bash
+# Clone the repository
+git clone https://github.com/Eliahhango/DocAI.git
+cd DocAI
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your configuration
+
+# Set up database
+npm run db:generate
+npm run db:push
+
+# Run development server
+npm run dev
 ```
 
-## 🎨 Key Features Implementation
+Visit [http://localhost:3000](http://localhost:3000) to see your application.
 
-### AI Document Generation
-- Uses OpenAI GPT-4 Turbo for content generation
-- Supports Word, PDF, and PowerPoint formats
-- Context-aware generation with user prompts
-- Professional formatting and structure
+**For detailed setup instructions, see [SETUP.md](./SETUP.md)**
 
-### Document Processing
-- Word document generation using `docx` library
-- PDF generation using `pdfkit`
-- PowerPoint generation using `pptxgenjs`
-- File conversion capabilities (framework ready)
-
-### Authentication
-- NextAuth.js with email/password and Google OAuth
-- Secure session management
-- Protected API routes
-- User profile management
-
-### Database
-- PostgreSQL database via Prisma ORM
-- User management
-- Document storage with version history
-- Subscription tracking
-
-## 🚀 Deployment
+## Deployment
 
 ### Vercel (Recommended)
+
 1. Push code to GitHub
 2. Import project in Vercel
 3. Add environment variables
@@ -194,7 +158,7 @@ docai/
 
 ### Quick Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/docai)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Eliahhango/DocAI)
 
 ### Database Setup
 For production, use a managed PostgreSQL database:
@@ -215,39 +179,134 @@ For production file storage:
 
 **Note:** Do not use local filesystem (`/uploads`) in production as files will be lost on each deployment.
 
-## 🔒 Security
+## Project Structure
+
+```
+DocAI/
+├── app/                      # Next.js App Router
+│   ├── api/                  # API routes
+│   │   ├── auth/            # Authentication routes
+│   │   ├── documents/       # Document API routes
+│   │   ├── stripe/          # Payment routes
+│   │   └── upload/          # File upload routes
+│   ├── dashboard/           # Dashboard pages
+│   │   ├── documents/       # Document management
+│   │   ├── generate/        # AI generation pages
+│   │   └── settings/        # User settings
+│   ├── login/               # Login page
+│   └── signup/              # Signup page
+├── components/              # React components
+│   ├── layout/             # Layout components
+│   ├── providers/          # Context providers
+│   ├── ui/                 # UI components
+│   └── collaboration/      # Collaboration features
+├── lib/                     # Utility libraries
+│   ├── ai.ts               # OpenAI integration
+│   ├── documents.ts        # Document processing
+│   ├── auth.ts             # Authentication helpers
+│   └── prisma.ts           # Prisma client
+├── prisma/                  # Database schema
+│   └── schema.prisma       # Prisma schema
+└── mobile-app/              # React Native mobile app
+```
+
+## Features Overview
+
+<details>
+<summary><strong>Core Features</strong></summary>
+
+- AI-powered document generation (Word, PDF, PowerPoint)
+- Document rewriting and enhancement
+- Grammar and formatting assistance
+- Multi-language translation
+- Document summarization
+- Format conversion (Word ↔ PDF, PPT ↔ PDF, etc.)
+- File upload and processing
+- Template library
+- Real-time collaboration
+- Version history
+
+</details>
+
+<details>
+<summary><strong>Advanced Features</strong></summary>
+
+- Stripe payment integration
+- Premium subscription system
+- Advanced document templates
+- Real-time collaboration with Socket.IO
+- Mobile app (React Native)
+- Dark/Light mode
+- Responsive design
+- User authentication (Email + Google OAuth)
+- Cloud storage
+
+</details>
+
+## Development
+
+### Available Scripts
+
+```bash
+# Development
+npm run dev          # Start development server
+
+# Build
+npm run build        # Build for production
+npm start            # Start production server
+
+# Database
+npm run db:generate  # Generate Prisma Client
+npm run db:push      # Push schema to database
+npm run db:studio    # Open Prisma Studio
+
+# Linting
+npm run lint         # Run ESLint
+```
+
+## Documentation
+
+- **[SETUP.md](./SETUP.md)** - Detailed setup guide
+- **[VERCEL_DEPLOY.md](./VERCEL_DEPLOY.md)** - Vercel deployment guide
+- **[DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)** - Pre-deployment checklist
+- **[ENHANCEMENTS.md](./ENHANCEMENTS.md)** - Future enhancements documentation
+
+## Security
 
 - Environment variables for sensitive data
 - Secure password hashing (bcrypt)
 - Protected API routes with authentication
 - File upload validation
 - SQL injection protection (Prisma)
+- XSS protection
+- CORS configuration
 
-## 📝 Future Enhancements
-
-- [ ] File upload with drag-and-drop
-- [ ] Real-time collaboration
-- [ ] Advanced document templates
-- [ ] Plagiarism checking
-- [ ] Team workspaces
-- [ ] Mobile app (React Native)
-- [ ] Advanced AI features (charts, tables)
-- [ ] Payment integration (Stripe)
-- [ ] Analytics dashboard
-- [ ] Document sharing and permissions
-
-## 📄 License
-
-MIT License - feel free to use this project for your own purposes.
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📧 Support
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-For issues and questions, please open an issue on GitHub.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For issues, questions, or feature requests, please open an issue on [GitHub](https://github.com/Eliahhango/DocAI/issues).
 
 ---
 
-Built with ❤️ using Next.js, TypeScript, and OpenAI
+<div align="center">
+
+**Built with modern technologies and best practices**
+
+[Next.js](https://nextjs.org/) • [TypeScript](https://www.typescriptlang.org/) • [Prisma](https://www.prisma.io/) • [OpenAI](https://openai.com/) • [Stripe](https://stripe.com/)
+
+Created by [Eliahhango](https://github.com/Eliahhango)
+
+</div>
